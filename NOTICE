@@ -1,0 +1,7 @@
+andsee Cutroom agent plugin
+Copyright 2026 andsee
+
+This repository holds the agent-facing part of andsee Cutroom: a skill that installs Cutroom, signs it in and hands
+over to the full skill that ships with the engine, plus the plugin manifests for agents. It is licensed under the
+Apache License, Version 2.0. The Cutroom engine itself is distributed separately as an installer under its own terms
+(https://studio.andsee.ai/install/cutroom-terms.html).

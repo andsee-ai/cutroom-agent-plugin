@@ -1,0 +1,10 @@
+{
+  "name": "cutroom",
+  "description": "andsee Cutroom — turn reference videos into your own videos on your computer: one-to-one remakes, smart edits of a talking-head take, captions, B-roll, motion graphics and sound. Installs and signs in the local Cutroom engine and hands over to its full skill.",
+  "version": "0.1.0",
+  "author": { "name": "andsee", "url": "https://studio.andsee.ai/cutroom" },
+  "homepage": "https://studio.andsee.ai/cutroom",
+  "repository": "https://github.com/andsee-ai/cutroom-agent-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["video", "editing", "remake", "captions", "tiktok", "motion-graphics"]
+}
