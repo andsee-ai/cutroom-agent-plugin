@@ -1,6 +1,6 @@
 {
   "name": "andsee",
-  "owner": { "name": "andsee", "url": "https://studio.andsee.ai" },
+  "owner": { "name": "andsee", "url": "https://andsee.ai" },
   "plugins": [
     { "name": "cutroom", "source": "./", "description": "andsee Cutroom — turn reference videos into your own videos on your computer." }
   ]

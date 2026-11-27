@@ -6,29 +6,42 @@ talking-head take: it works out how the reference is edited and lays that edit o
 layouts, B-roll, motion graphics, music and sound, all anchored to the words you say — then renders it and scores the
 result against the reference.
 
-[Website and account](https://studio.andsee.ai/cutroom) · [简体中文](./README.zh-CN.md) · [Signing in and generation](./docs/account.md) · [Agents](./docs/agents.md)
+[Website and account](https://andsee.ai/cutroom) · [简体中文](./README.zh-CN.md) · [Signing in and generation](./docs/account.md) · [Agents](./docs/agents.md)
 
 This repository is the open part: the starter skill agents read, and the plugin manifests. The engine is installed
 separately (free, sign-in required).
 
 ## Install
 
-Paste this into your agent:
+Paste this into your agent (Claude Code, Codex, Antigravity …; the same on macOS and Windows). It installs Cutroom
+(or updates it to the newest release), signs you in and links the full skill:
 
 ```text
-Read https://github.com/andsee-ai/cutroom-agent-plugin/blob/main/skills/cutroom-start/SKILL.md and set up Cutroom.
+Read https://github.com/andsee-ai/cutroom-agent-plugin/blob/main/skills/cutroom-start/SKILL.md and follow it: install Cutroom on this computer (update it if it is already installed), sign in to andsee, then hand over to the full cutroom skill.
 ```
 
-or do it yourself (macOS, Apple silicon):
+or do it yourself:
 
 ```sh
-curl -fsSL https://studio.andsee.ai/install/cutroom.sh | sh
+# macOS (Apple silicon), in Terminal
+curl -fsSL https://andsee.ai/install/cutroom.sh | sh
+```
+
+```powershell
+# Windows 10 / 11 (64-bit), in PowerShell
+irm https://andsee.ai/install/cutroom.ps1 | iex
+```
+
+then (on Windows, in a new terminal window):
+
+```sh
 cutroom login            # sign in to andsee in your browser (free) and approve this computer
-cutroom env              # check the machine: FFmpeg, Chrome …
+cutroom env              # check the machine: FFmpeg, Chrome / Edge … and how to install what is missing
 cutroom skill install    # link the skill into Claude Code / Codex / Antigravity
 ```
 
-Windows and Intel Macs are being prepared.
+After that it looks after itself: the editor (`cutroom editor`) installs a new release while nothing runs, and
+`cutroom update` does it any time. Intel Macs and Linux are being prepared.
 
 ## What you can ask for
 
@@ -60,5 +73,5 @@ whether you may use a picture, a person, a song or a logo from someone else's vi
 ## Licence
 
 The contents of this repository are licensed under [Apache-2.0](./LICENSE). The Cutroom engine is distributed as an
-installer under its own [terms](https://studio.andsee.ai/install/cutroom-terms.html). Cutroom is an independent
+installer under its own [terms](https://andsee.ai/install/cutroom-terms.html). Cutroom is an independent
 implementation; the third-party components it includes are listed in the `THIRD-PARTY-NOTICES.md` of the installer.

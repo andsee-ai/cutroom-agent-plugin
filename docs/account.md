@@ -20,4 +20,4 @@ Cutroom is free to use and works after one sign-in to andsee.
   and works offline for seven days.
 - Editing, captions, motion and rendering run on your computer and cost nothing. Only generating pictures, clips or
   voice costs money, and every paid step shows its price and waits for your yes.
-- On a machine without a browser, set `ANDSEE_TOKEN` to a key from https://studio.andsee.ai/cutroom.
+- On a machine without a browser, set `ANDSEE_TOKEN` to a key from https://andsee.ai/cutroom.
